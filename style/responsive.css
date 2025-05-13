@@ -1,0 +1,64 @@
+@media screen and (max-width:990px) {
+    .header .sidebar-toggle {
+        display: flex;
+
+    }
+
+    .main-content {
+        width: 100%;
+    }
+
+    .sidebar-toggler-with-heading {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    button.sidebar-toggle {
+        outline: none;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    .sidebar {
+        transform: translateX(-100%);
+        position: absolute;
+        height: 100vh;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .sidebar.active {
+        transform: translateX(0);
+        z-index: 99;
+    }
+
+    .table-container {
+        white-space: nowrap;
+        overflow: scroll;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .create-new-autoship-container {
+        flex-wrap: wrap;
+    }
+
+    .left-section {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .selected-products {
+        overflow-x: scroll;
+    }
+
+    .selected-items {
+        padding: 0px;
+        overflow: scroll;
+        width: max-content;
+    }
+}
